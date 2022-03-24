@@ -19,7 +19,7 @@ components:
     image:
       imageName: nodejs-image:latest
       dockerfile:
-        # uri: Dockerfile
+        uri: ""
         buildContext: .
         rootRequired: false
   - name: outerloop-deploy
