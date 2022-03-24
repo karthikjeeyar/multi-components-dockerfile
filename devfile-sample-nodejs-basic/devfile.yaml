@@ -15,13 +15,13 @@ parent:
   id: nodejs
   registryUrl: "https://registry.devfile.io"
 components:
-  # - name: outerloop-build
-  #   image:
-  #     imageName: nodejs-image:latest
-  #     dockerfile:
-  #       uri: Dockerfile
-  #       buildContext: .
-  #       rootRequired: false
+  - name: outerloop-build
+    image:
+      imageName: nodejs-image:latest
+      dockerfile:
+        # uri: Dockerfile
+        buildContext: .
+        rootRequired: false
   - name: outerloop-deploy
     kubernetes:
       uri: outerloop-deploy.yaml
