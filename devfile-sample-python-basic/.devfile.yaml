@@ -16,7 +16,7 @@ components:
     image:
       imageName: python-image:latest
       dockerfile:
-        uri: Dockerfile
+        uri: https://raw.githubusercontent.com/maysunfaisal/multi-components-dockerfile/main/devfile-sample-python-basic/Dockerfile
         buildContext: .
         rootRequired: false
   - name: outerloop-deploy
